@@ -2,6 +2,20 @@ export default {
   name: 'resume',
   title: 'Resume Information',
   type: 'document',
+  preview: {
+    select: {
+      image: 'user.profilePicture',
+      title: 'user.fullName',
+    },
+    prepare(selection : { image: string, title: string }) {
+      
+      return {
+        media: selection.image,
+        title: selection.title,
+        subtitle: 'current',
+      }
+    },
+  },  
   fields: [
     {
       name: 'user',
