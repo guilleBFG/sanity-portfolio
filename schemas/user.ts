@@ -30,7 +30,7 @@ export default {
       title: "LinkedIn",
       name: "linkedIn",
       type: "url",
-      validation: (Rule) =>
+      validation: (Rule: any) =>
         Rule.uri({
           scheme: ["http", "https", "mailto", "tel"],
         }),
@@ -60,5 +60,5 @@ export default {
       title: "Cover Letter",
       type: "blockLocale",
     },
-  ],
+  ]
 };

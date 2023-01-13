@@ -7,8 +7,7 @@ import education from './education'
 import additionalTrainings from './additionalTrainings'
 import resume from './resume'
 import projects from './projects'
-
 export const schemaTypes = [
     resume, user, workHistory, education, additionalTrainings, 
-    projects, stringLocale, blockLocale
+    projects, stringLocale, blockLocale,
 ]

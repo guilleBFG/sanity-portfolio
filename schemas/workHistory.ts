@@ -51,7 +51,7 @@ export default{
             fromDate: "fromDate",
             toDate: "toDate",            
         },
-        prepare(selection: any ){
+        prepare(selection: { title : string , companyLogo : string , jobTitle: string , fromDate: Date, toDate: Date } ){
             const {title, companyLogo, jobTitle, fromDate, toDate} = selection;
             return {
                 media: companyLogo,
